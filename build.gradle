@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'ray-casting'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+    baseName = "ray-casting"
+}
+
+sourceCompatibility = 1.8
+
+artifacts {
+    archives jar
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
