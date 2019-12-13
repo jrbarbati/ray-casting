@@ -229,7 +229,7 @@ public class Main implements Runnable, MouseMotionListener, KeyListener, ChangeL
     {
         if (args.length != 1)
         {
-            System.out.println("Usage: java -jar ");
+            System.out.println("Usage: java -jar build/libs/ray-casting.jar <NUMBER_OF_RAYS>");
             System.exit(1);
         }
 
